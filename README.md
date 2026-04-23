@@ -1,2 +1,2 @@
 # PAPIIT-IA102525
-Este repositorio contiene los resultados del proyecto "Modelación de Sistemas Físicos y su Análisis Dinámico utilizando Cálculo Fraccionario".
+Este repositorio contiene los resultados del proyecto "Modelación de Sistemas Físicos y su Análisis Dinámico utilizando Cálculo Fraccionario".  Se incluyen modelos matemáticos desarrollados a partir de principios fundamentales, así como implementaciones computacionales en Python y MATLAB-Simulink. El repositorio presenta simulaciones numéricas, visualizaciones de resultados y comparaciones con datos experimentales.  Además, se documentan los adjuntos, con el objetivo de facilitar la reproducibilidad y servir como referencia para proyectos similares o futuras mejoras.
