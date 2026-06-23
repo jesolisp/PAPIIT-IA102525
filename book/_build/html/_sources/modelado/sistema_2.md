@@ -1,0 +1,1 @@
+# Sistema masa resorte amortiguador

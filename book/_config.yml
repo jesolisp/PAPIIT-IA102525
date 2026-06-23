@@ -1,0 +1,83 @@
+title: Modelación de Sistemas Físicos y su Análisis Dinámico utilizando Cálculo Fraccionario
+author: Dr. Jesús Emmanuel Solís Pérez
+copyright: "2026"
+email: jsolisp@unam.mx
+
+execute:
+  execute_notebooks: 'auto'
+
+only_build_toc_files: true
+
+html:
+  favicon : "images/favicon.ico"
+  # baseurl  : "https://teachbooks.io/manual/"
+
+sphinx:
+  extra_extensions:
+  - sphinx_inline_tabs
+  - sphinx.ext.imgconverter
+  - teachbooks_favourites
+  - teachbooks_sphinx_grasple
+  - sphinx_apa_references
+  - sphinx_proof
+  config:
+    language: es
+    bibtex_reference_style: author_year
+    html_js_files:
+    - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
+    thebe_config:
+      use_thebe_lite: true
+      exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb","**/*.gif","**/*.txt","**/*.json",]
+    html_theme_options:
+      logo:
+        text: PAPIIT-IA102525
+        image_light: nisa_logo.svg
+        image_dark: nisa_logo_inverted.svg
+      repository_url: "https://github.com/jesolisp/PAPIIT-IA102525"
+      path_to_docs: "book"
+      repository_branch: "release"
+      use_repository_button: true
+      use_download_button: true
+      use_edit_page_button: true
+      use_issues_button : true
+      launch_buttons:
+          thebe: true
+    html_show_copyright: false
+    html_last_updated_fmt: '%B %-d, %Y'
+    html_static_path: ["images"]
+    mathjax3_config:
+      tex:
+        macros:
+          "newcolor": ['\definecolor{newcolor}{RGB}{111, 29, 119}{\color{newcolor}#1}',1]
+    named_colors_custom_colors: {'onlylight':[165,21,160],'lightanddark':[45,180,117,204,158,110],'hyphen-color':[45,180,117,165,21,160],'attributiongrey':[150,150,150]}
+    metadata_figure_settings:
+      style: 
+        placement: hide
+      license:
+        summaries: false
+        individual: false
+    nb_execution_includepatterns: "**/MANUAL.ipynb"
+    git_show_all_authors: true
+
+teachbooks:
+  attribution_location: margin
+  attribution_color: attributiongrey
+
+bibtex_bibfiles: 
+  - references.bib
+
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - amsmath
+    - dollarmath
+    - html_image
+    - colon_fence
+    - linkify
+    - substitution
+    - deflist
+    - replacements
+    - smartquotes
+    - substitution
+    - html_admonition

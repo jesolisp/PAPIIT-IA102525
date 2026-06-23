@@ -1,0 +1,71 @@
+/* root variables for dynamic theming */
+:root {
+    --zoomies-img-padding: 0;
+    --zoomies-img-rounded: 0;
+}
+
+/* --- Base Styles for Caption --- */
+.viewer-title {
+    font-size: 1.25rem !important;
+    line-height: 1.4;
+    font-weight: 500;
+    white-space: normal;
+    padding: 6px 16px 10px !important;
+    opacity: 1 !important;
+    transition: color 0.3s ease;
+    color: var(--zoomies-caption-color) !important;
+}
+
+/* Hide the title when it's empty to avoid unnecessary space/padding */
+.viewer-title:empty {
+    display: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Footer rendered below the canvas with a solid background */
+.viewer-container .viewer-footer {
+    background-color: var(--pst-color-background);
+}
+
+/* Ensure the toolbar has enough padding, especially when title is empty */
+.viewer-footer .viewer-toolbar {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+/* --- Dynamic Background Application --- */
+
+/* 1. Backdrop Background */
+.viewer-backdrop {
+    background-color: var(--zoomies-backdrop-bg) !important;
+}
+
+/* 2. Image Styles */
+.viewer-container .viewer-canvas img {
+    padding: var(--zoomies-img-padding, 0) !important;
+    border-radius: var(--zoomies-img-rounded, 0) !important;
+    
+    /* Ensure padding and background are visible */
+    box-sizing: content-box !important;
+
+    /* Prevent vertical stretching when zooming beyond screen width */
+    max-width: none !important;
+    max-height: none !important;
+    flex-shrink: 0 !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+}
+
+/* Ensure the canvas itself is transparent */
+.viewer-canvas {
+    background-color: transparent !important;
+}
+
+html:not([data-theme=dark]) body.high-contrast.viewer-open {
+    filter: none !important;
+}
+
+html[data-theme=dark] body.high-contrast.viewer-open {
+    filter: none !important;
+}

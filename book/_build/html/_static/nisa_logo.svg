@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/computer-modern');
+      .latex-font {
+        font-family: 'CMU Serif', 'Computer Modern', 'Latin Modern Math', serif;
+      }
+    </style>
+
+    <pattern id="ai-nodes" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.5" fill="#000000" fill-opacity="0.25" />
+      <line x1="3" y1="3" x2="33" y2="33" stroke="#000000" stroke-opacity="0.0625" stroke-width="1" />
+    </pattern>
+
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="400" fill="#FFFFFF" />
+  
+  <rect x="360" y="50" width="350" height="300" fill="url(#ai-nodes)" />
+
+  <g transform="translate(200, 200)">
+    <path d="M 0 0 C -180 -190 -200 190 0 0 C 180 -190 200 190 0 0" 
+          fill="none" stroke="#D81B60" stroke-width="2" stroke-opacity="0.5" stroke-linecap="round"/>
+          
+    <path d="M 0 0 C -140 -150 -160 150 0 0 C 140 -150 160 150 0 0" 
+          fill="none" stroke="#7B1FA2" stroke-width="3" stroke-opacity="0.7" stroke-linecap="round"/>
+          
+    <path d="M 0 0 C -100 -110 -120 110 0 0 C 100 -110 120 110 0 0" 
+          fill="none" stroke="#00838F" stroke-width="4" stroke-opacity="0.9" stroke-linecap="round"/>
+
+    <circle cx="-110" cy="-60" r="3" fill="#00838F" />
+    <circle cx="80" cy="90" r="4" fill="#D81B60" />
+    <circle cx="-50" cy="120" r="2.5" fill="#7B1FA2" />
+    <circle cx="120" cy="-40" r="2" fill="#000000" fill-opacity="0.25" />
+
+    <circle cx="0" cy="0" r="75" fill="#FFFFFF" stroke="#CDD7E5" stroke-width="3" />
+  </g>
+
+  <g filter="url(#drop-shadow)">
+    <text x="140" y="170" class="latex-font" font-weight="bold" font-size="40" fill="#B58900">*</text>
+
+    <text x="163" y="228" class="latex-font" font-style="italic" font-weight="bold" font-size="95" fill="#0F172A">D</text>
+
+    <text x="240" y="170" class="latex-font" font-style="italic" font-weight="bold" font-size="42" fill="#0F172A">α</text>
+
+    <text x="242" y="245" class="latex-font" font-style="italic" font-weight="bold" font-size="38" fill="#0F172A">t</text>
+  </g>
+
+  <line x1="350" y1="50" x2="350" y2="350" stroke="#CDD7E5" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="380" y="200" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="115" fill="#0F172A" letter-spacing="6">NISA</text>
+  
+  <text x="385" y="240" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="20" fill="#00838F" letter-spacing="2.5">NON-INTEGER SYSTEMS</text>
+  
+  <text x="385" y="270" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="20" fill="#D81B60" letter-spacing="2.5">&amp; AI RESEARCH</text>
+
+  <rect x="385" y="295" width="300" height="4" fill="#7B1FA2" rx="2" />
+</svg>

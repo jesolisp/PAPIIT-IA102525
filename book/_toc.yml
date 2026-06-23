@@ -1,0 +1,17 @@
+format: jb-book
+root: intro
+
+parts:
+  - caption: Bienvenido!
+    chapters:
+    - file: intro/introduccion.md
+    - file: intro/derivada_conformable.md
+
+  - caption: Modelado de sistemas físicos
+    chapters:
+    - file: modelado/sistema_1.ipynb
+    - file: modelado/sistema_2.ipynb
+
+  - caption: Miscellaneous
+    chapters:
+    - file: references.md

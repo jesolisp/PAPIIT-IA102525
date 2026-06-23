@@ -1,0 +1,13 @@
+# Introducción
+
+El cálculo de orden entero ha servido como el lenguaje fundamental de la física durante siglos, proporcionando marcos robustos para el modelado de sistemas cinemáticos, mecánicos y biológicos. Sin embargo, las ecuaciones diferenciales ordinarias (EDO) clásicas asumen inherentemente que el estado futuro de un sistema depende únicamente de su estado presente y de una tasa de cambio localizada. En la realidad, muchos sistemas complejos —que abarcan desde materiales viscoelásticos hasta tejidos biológicos heterogéneos— exhiben efectos de memoria, difusión anómala y dinámicas no locales que no pueden ser capturadas en su totalidad por operadores de orden entero.
+
+El cálculo fraccionario aborda esta limitación al generalizar el orden de derivación a valores no enteros ($\alpha$). Las definiciones fraccionarias tradicionales, como las de Riemann-Liouville o Liouville-Caputo, introducen convoluciones integrales que son computacionalmente costosas y analíticamente engorrosas para sistemas no lineales complejos. Para superar estos cuellos de botella computacionales y, al mismo tiempo, conservar el poder descriptivo del modelado fraccionario, {cite:t}`khalil2014new` introdujeron la derivada conformable. Para una función diferenciable $f(t)$, la derivada conformable de orden $\alpha \in (0,1]$ se define de forma local, permitiendo que se exprese como un escalamiento ponderado en el tiempo y dimensionalmente consistente de la primera derivada clásica
+
+\begin{equation}
+ {}^{K}\mathcal{D}_{t}^{\alpha}~f(t) = \left(\frac{t}{\sigma}\right)^{1-\alpha} \frac{df}{dt}(t),
+\end{equation}
+
+donde $\sigma$ actúa como un parámetro característico de escalamiento temporal introducido para preservar la homogeneidad dimensional física. Esta formulación altera fundamentalmente la progresión del tiempo dentro del sistema, proporcionando un poderoso mecanismo para modelar disipaciones complejas y efectos transitorios sin introducir términos empíricos *ad hoc*.
+
+Este reporte investiga sistemáticamente la aplicación de la derivada conformable a través de tres regímenes físicos y biológicos distintos: un péndulo no lineal impulsado por un chorro de aire, un oscilador masa-resorte amortiguador y la dinámica de reacción-difusión de los potenciales de acción cardíacos. Al combinar el operador conformable con técnicas robustas de estimación de parámetros (e.g., evolución diferencial, análisis de perfil de verosimilitud), este trabajo demuestra cómo el cálculo fraccionario puede cerrar la brecha entre las idealizaciones teóricas y las complejas realidades empíricas.
