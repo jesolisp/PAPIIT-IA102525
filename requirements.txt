@@ -11,3 +11,4 @@ sphinx-apa-references
 myst_nb
 numpy
 matplotlib
+wfdb
