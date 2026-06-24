@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <meta property="article:modified_time" content="2026-06-23T10:53:18-06:00" />
     <title>Derivada conformable de Khalil &#8212; Modelación de Sistemas Físicos y su Análisis Dinámico utilizando Cálculo Fraccionario</title>
   
   
@@ -128,7 +129,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="../_static/tippy/intro/derivada_conformable.c7251c63-6220-461d-876b-ca39bdb38909.js"></script>
+    <script defer="defer" src="../_static/tippy/intro/derivada_conformable.28517a84-c1cc-4e1a-91ce-8081966ce133.js"></script>
     <script>window.MathJax = {"tex": {"macros": {"newcolor": ["\\definecolor{newcolor}{RGB}{111, 29, 119}{\\color{newcolor}#1}", 1], "black": ["\\class{black}{#1}", 1], "silver": ["\\class{silver}{#1}", 1], "gray": ["\\class{gray}{#1}", 1], "white": ["\\class{white}{#1}", 1], "maroon": ["\\class{maroon}{#1}", 1], "red": ["\\class{red}{#1}", 1], "purple": ["\\class{purple}{#1}", 1], "fuchsia": ["\\class{fuchsia}{#1}", 1], "green": ["\\class{green}{#1}", 1], "lime": ["\\class{lime}{#1}", 1], "olive": ["\\class{olive}{#1}", 1], "yellow": ["\\class{yellow}{#1}", 1], "navy": ["\\class{navy}{#1}", 1], "blue": ["\\class{blue}{#1}", 1], "teal": ["\\class{teal}{#1}", 1], "aqua": ["\\class{aqua}{#1}", 1], "aliceblue": ["\\class{aliceblue}{#1}", 1], "antiquewhite": ["\\class{antiquewhite}{#1}", 1], "aquamarine": ["\\class{aquamarine}{#1}", 1], "azure": ["\\class{azure}{#1}", 1], "beige": ["\\class{beige}{#1}", 1], "bisque": ["\\class{bisque}{#1}", 1], "blanchedalmond": ["\\class{blanchedalmond}{#1}", 1], "blueviolet": ["\\class{blueviolet}{#1}", 1], "brown": ["\\class{brown}{#1}", 1], "burlywood": ["\\class{burlywood}{#1}", 1], "cadetblue": ["\\class{cadetblue}{#1}", 1], "chartreuse": ["\\class{chartreuse}{#1}", 1], "chocolate": ["\\class{chocolate}{#1}", 1], "coral": ["\\class{coral}{#1}", 1], "cornflowerblue": ["\\class{cornflowerblue}{#1}", 1], "cornsilk": ["\\class{cornsilk}{#1}", 1], "crimson": ["\\class{crimson}{#1}", 1], "cyan": ["\\class{cyan}{#1}", 1], "darkblue": ["\\class{darkblue}{#1}", 1], "darkcyan": ["\\class{darkcyan}{#1}", 1], "darkgoldenrod": ["\\class{darkgoldenrod}{#1}", 1], "darkgray": ["\\class{darkgray}{#1}", 1], "darkgreen": ["\\class{darkgreen}{#1}", 1], "darkgrey": ["\\class{darkgrey}{#1}", 1], "darkkhaki": ["\\class{darkkhaki}{#1}", 1], "darkmagenta": ["\\class{darkmagenta}{#1}", 1], "darkolivegreen": ["\\class{darkolivegreen}{#1}", 1], "darkorange": ["\\class{darkorange}{#1}", 1], "darkorchid": ["\\class{darkorchid}{#1}", 1], "darkred": ["\\class{darkred}{#1}", 1], "darksalmon": ["\\class{darksalmon}{#1}", 1], "darkseagreen": ["\\class{darkseagreen}{#1}", 1], "darkslateblue": ["\\class{darkslateblue}{#1}", 1], "darkslategray": ["\\class{darkslategray}{#1}", 1], "darkslategrey": ["\\class{darkslategrey}{#1}", 1], "darkturquoise": ["\\class{darkturquoise}{#1}", 1], "darkviolet": ["\\class{darkviolet}{#1}", 1], "deeppink": ["\\class{deeppink}{#1}", 1], "deepskyblue": ["\\class{deepskyblue}{#1}", 1], "dimgray": ["\\class{dimgray}{#1}", 1], "dimgrey": ["\\class{dimgrey}{#1}", 1], "dodgerblue": ["\\class{dodgerblue}{#1}", 1], "firebrick": ["\\class{firebrick}{#1}", 1], "floralwhite": ["\\class{floralwhite}{#1}", 1], "forestgreen": ["\\class{forestgreen}{#1}", 1], "gainsboro": ["\\class{gainsboro}{#1}", 1], "ghostwhite": ["\\class{ghostwhite}{#1}", 1], "gold": ["\\class{gold}{#1}", 1], "goldenrod": ["\\class{goldenrod}{#1}", 1], "greenyellow": ["\\class{greenyellow}{#1}", 1], "grey": ["\\class{grey}{#1}", 1], "honeydew": ["\\class{honeydew}{#1}", 1], "hotpink": ["\\class{hotpink}{#1}", 1], "indianred": ["\\class{indianred}{#1}", 1], "indigo": ["\\class{indigo}{#1}", 1], "ivory": ["\\class{ivory}{#1}", 1], "khaki": ["\\class{khaki}{#1}", 1], "lavender": ["\\class{lavender}{#1}", 1], "lavenderblush": ["\\class{lavenderblush}{#1}", 1], "lawngreen": ["\\class{lawngreen}{#1}", 1], "lemonchiffon": ["\\class{lemonchiffon}{#1}", 1], "lightblue": ["\\class{lightblue}{#1}", 1], "lightcoral": ["\\class{lightcoral}{#1}", 1], "lightcyan": ["\\class{lightcyan}{#1}", 1], "lightgoldenrodyellow": ["\\class{lightgoldenrodyellow}{#1}", 1], "lightgray": ["\\class{lightgray}{#1}", 1], "lightgreen": ["\\class{lightgreen}{#1}", 1], "lightgrey": ["\\class{lightgrey}{#1}", 1], "lightpink": ["\\class{lightpink}{#1}", 1], "lightsalmon": ["\\class{lightsalmon}{#1}", 1], "lightseagreen": ["\\class{lightseagreen}{#1}", 1], "lightskyblue": ["\\class{lightskyblue}{#1}", 1], "lightslategray": ["\\class{lightslategray}{#1}", 1], "lightslategrey": ["\\class{lightslategrey}{#1}", 1], "lightsteelblue": ["\\class{lightsteelblue}{#1}", 1], "lightyellow": ["\\class{lightyellow}{#1}", 1], "limegreen": ["\\class{limegreen}{#1}", 1], "linen": ["\\class{linen}{#1}", 1], "magenta": ["\\class{magenta}{#1}", 1], "mediumaquamarine": ["\\class{mediumaquamarine}{#1}", 1], "mediumblue": ["\\class{mediumblue}{#1}", 1], "mediumorchid": ["\\class{mediumorchid}{#1}", 1], "mediumpurple": ["\\class{mediumpurple}{#1}", 1], "mediumseagreen": ["\\class{mediumseagreen}{#1}", 1], "mediumslateblue": ["\\class{mediumslateblue}{#1}", 1], "mediumspringgreen": ["\\class{mediumspringgreen}{#1}", 1], "mediumturquoise": ["\\class{mediumturquoise}{#1}", 1], "mediumvioletred": ["\\class{mediumvioletred}{#1}", 1], "midnightblue": ["\\class{midnightblue}{#1}", 1], "mintcream": ["\\class{mintcream}{#1}", 1], "mistyrose": ["\\class{mistyrose}{#1}", 1], "moccasin": ["\\class{moccasin}{#1}", 1], "navajowhite": ["\\class{navajowhite}{#1}", 1], "oldlace": ["\\class{oldlace}{#1}", 1], "olivedrab": ["\\class{olivedrab}{#1}", 1], "orange": ["\\class{orange}{#1}", 1], "orangered": ["\\class{orangered}{#1}", 1], "orchid": ["\\class{orchid}{#1}", 1], "palegoldenrod": ["\\class{palegoldenrod}{#1}", 1], "palegreen": ["\\class{palegreen}{#1}", 1], "paleturquoise": ["\\class{paleturquoise}{#1}", 1], "palevioletred": ["\\class{palevioletred}{#1}", 1], "papayawhip": ["\\class{papayawhip}{#1}", 1], "peachpuff": ["\\class{peachpuff}{#1}", 1], "peru": ["\\class{peru}{#1}", 1], "pink": ["\\class{pink}{#1}", 1], "plum": ["\\class{plum}{#1}", 1], "powderblue": ["\\class{powderblue}{#1}", 1], "rebeccapurple": ["\\class{rebeccapurple}{#1}", 1], "rosybrown": ["\\class{rosybrown}{#1}", 1], "royalblue": ["\\class{royalblue}{#1}", 1], "saddlebrown": ["\\class{saddlebrown}{#1}", 1], "salmon": ["\\class{salmon}{#1}", 1], "sandybrown": ["\\class{sandybrown}{#1}", 1], "seagreen": ["\\class{seagreen}{#1}", 1], "seashell": ["\\class{seashell}{#1}", 1], "sienna": ["\\class{sienna}{#1}", 1], "skyblue": ["\\class{skyblue}{#1}", 1], "slateblue": ["\\class{slateblue}{#1}", 1], "slategray": ["\\class{slategray}{#1}", 1], "slategrey": ["\\class{slategrey}{#1}", 1], "snow": ["\\class{snow}{#1}", 1], "springgreen": ["\\class{springgreen}{#1}", 1], "steelblue": ["\\class{steelblue}{#1}", 1], "thistle": ["\\class{thistle}{#1}", 1], "tomato": ["\\class{tomato}{#1}", 1], "turquoise": ["\\class{turquoise}{#1}", 1], "violet": ["\\class{violet}{#1}", 1], "wheat": ["\\class{wheat}{#1}", 1], "whitesmoke": ["\\class{whitesmoke}{#1}", 1], "yellowgreen": ["\\class{yellowgreen}{#1}", 1], "onlylight": ["\\class{onlylight}{#1}", 1], "lightanddark": ["\\class{lightanddark}{#1}", 1], "hyphen-color": ["\\class{hyphen-color}{#1}", 1], "attributiongrey": ["\\class{attributiongrey}{#1}", 1]}}, "loader": {"load": ["ui/lazy"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="../_static/mathjax_patch.js?v=c73a562d"></script>
     <script src="https://unpkg.com/viewerjs/dist/viewer.min.js"></script>
@@ -168,6 +169,7 @@
     <link rel="prev" title="Introducción" href="introduccion.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
+    <meta name="docbuild:last-update" content="junio 23, 2026, editado por J.E. Solís-Pérez"/>
   </head>
   
   
@@ -288,6 +290,12 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../modelado/sistema_1.html">Péndulo simple</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modelado/sistema_2.html">Sistema masa resorte amortiguador</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../modelado/sistema_3.html">Modelado del Potencial de Acción del Electrocardiograma (ECG)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Notas parciales</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../notas/notas_parciales.html">Conclusiones parciales y trabajos futuras</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Miscellaneous</span></p>
 <ul class="nav bd-sidenav">
@@ -526,27 +534,25 @@ document.write(`
 <p class="admonition-title"><span class="caption-number">Definición 1 </span> (Derivada conformable de Khalil)</p>
 <section class="definition-content" id="proof-content">
 <p>Para una función diferenciable <span class="math notranslate nohighlight">\(f:[0,\infty) \rightarrow \mathbb{R}\)</span>, la derivada conformable de orden <span class="math notranslate nohighlight">\(\alpha\)</span> se define como</p>
-<div class="amsmath math notranslate nohighlight" id="equation-021393a2-7595-4bd3-b883-656ea5705872">
-<span class="eqno">(2)<a class="headerlink" href="#equation-021393a2-7595-4bd3-b883-656ea5705872" title="Permalink to this equation">#</a></span>\[\begin{equation}
-   {}^{K}\mathcal{D}_{t}^{\alpha}~f(t) = \lim_{\epsilon \rightarrow 0} \frac{f(t + \epsilon t^{1-\alpha}) - f(t)}{\epsilon}, \quad t &gt; 0.
-\end{equation}\]</div>
+<div class="math notranslate nohighlight" id="equation-khalil-derivative">
+<span class="eqno">(2)<a class="headerlink" href="#equation-khalil-derivative" title="Link to this equation">#</a></span>\[ {}^{K}\mathcal{D}_{t}^{\alpha}~f(t) = \lim_{\epsilon \rightarrow 0} \frac{f(t + \epsilon t^{1-\alpha}) - f(t)}{\epsilon}, \quad t &gt; 0.\]</div>
 </section>
 </div><p>Para el modelado computacional, la propiedad más crítica de esta definición es que, si <span class="math notranslate nohighlight">\(f\)</span> es diferenciable en el sentido clásico, la derivada fraccionaria puede expresarse como un simple escalamiento ponderado en el tiempo de la primera derivada</p>
-<div class="amsmath math notranslate nohighlight" id="equation-95bff417-479c-4859-8e59-3de8f6f370cc">
-<span class="eqno">(3)<a class="headerlink" href="#equation-95bff417-479c-4859-8e59-3de8f6f370cc" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c68ee479-a7b0-47e6-88bf-6adeafb8d534">
+<span class="eqno">(3)<a class="headerlink" href="#equation-c68ee479-a7b0-47e6-88bf-6adeafb8d534" title="Permalink to this equation">#</a></span>\[\begin{equation}
  {}^{K}\mathcal{D}_{t}^{\alpha}~f(t) = t^{1-\alpha} \frac{\mathrm{d}f}{\mathrm{d}t}(t).
 \end{equation}\]</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="consistencia-dimensional">
 <h1>Consistencia dimensional<a class="headerlink" href="#consistencia-dimensional" title="Link to this heading">#</a></h1>
 <p>En los sistemas físicos, cambiar el orden de la derivada de <span class="math notranslate nohighlight">\(1\)</span> a <span class="math notranslate nohighlight">\(\alpha\)</span> altera las unidades fundamentales de la ecuación (e.g., de <span class="math notranslate nohighlight">\(s^{-1}\)</span> a <span class="math notranslate nohighlight">\(s^{-\alpha}\)</span>). Para preservar la homogeneidad dimensional y el significado físico, se introduce un parámetro de escalamiento <span class="math notranslate nohighlight">\(\sigma\)</span> con unidades de tiempo <span class="math notranslate nohighlight">\([s]\)</span>. La formulación dimensionalmente robusta resulta ser</p>
-<div class="amsmath math notranslate nohighlight" id="equation-77e16172-2873-457c-bc30-947212bd1693">
-<span class="eqno">(4)<a class="headerlink" href="#equation-77e16172-2873-457c-bc30-947212bd1693" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-4b1b700d-0b35-4061-9fc3-bf52a847f527">
+<span class="eqno">(4)<a class="headerlink" href="#equation-4b1b700d-0b35-4061-9fc3-bf52a847f527" title="Permalink to this equation">#</a></span>\[\begin{equation}
  {}^{K}\mathcal{D}_{t}^{\alpha}~f(t) = \left(\frac{t}{\sigma}\right)^{1-\alpha} \frac{\mathrm{d}f}{\mathrm{d}t}(t).
 \end{equation}\]</div>
 <p>Al convertir una ecuación diferencial estándar <span class="math notranslate nohighlight">\(\frac{\mathrm{d}x}{\mathrm{d}t} = F(x, t)\)</span> a su equivalente fraccionario conformable, se reordenan los términos para despejar la derivada clásica, lo cual permite emplear integradores numéricos estándar como Runge-Kutta o BDF</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9d7d7de9-3c3d-4f84-a358-7bd5863099cc">
-<span class="eqno">(5)<a class="headerlink" href="#equation-9d7d7de9-3c3d-4f84-a358-7bd5863099cc" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-969ec30a-008a-4a79-a74f-f0a83cf13667">
+<span class="eqno">(5)<a class="headerlink" href="#equation-969ec30a-008a-4a79-a74f-f0a83cf13667" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \frac{\mathrm{d}x}{\mathrm{d}t} = \left(\frac{t}{\sigma}\right)^{\alpha - 1} F(x, t).
 \end{equation}\]</div>
 <p>Este factor de escalamiento actúa como el “modificador fraccionario” central a lo largo de los sistemas dinámicos explorados en este reporte.</p>
@@ -660,7 +666,10 @@ Por Dr. Jesús Emmanuel Solís Pérez
   </div>
   
   <div class="footer-item">
-    
+    <p class="last-updated">
+  Actualizado por última vez en junio 23, 2026, editado por J.E. Solís-Pérez.
+  <br/>
+</p>
   </div>
   
   <div class="footer-item">

@@ -1,0 +1,22 @@
+selector_to_html = {"a[href=\"#equation-ecg\"]": "<div class=\"math notranslate nohighlight\" id=\"equation-ecg\">\n\\[ ECG(t) = \\alpha_1 x_1(t) + \\alpha_2 x_2(t) + \\alpha_3 x_3(t) + \\alpha_4 x_4(t),\\]</div>", "a[href=\"#el-sistema-de-reaccion-difusion\"]": "<h2 class=\"tippy-header\" style=\"margin-top: 0;\">El sistema de reacci\u00f3n-difusi\u00f3n<a class=\"headerlink\" href=\"#el-sistema-de-reaccion-difusion\" title=\"Link to this heading\">#</a></h2><p>En este caso implementamos un modelo matem\u00e1tico propuesto por <span id=\"id1\">Quiroz-Ju\u00e1rez <em>et al.</em> (<a class=\"reference internal\" href=\"../references.html#id4\" title=\"Quiroz-Ju\u00e1rez, M., Jim\u00e9nez-Ram\u00edrez, O., V\u00e1zquez-Medina, R., Bre\u00f1a-Medina, V., Arag\u00f3n, J., &amp; Barrio, R. (2019). Generation of ecg signals from a reaction-diffusion model spatially discretized. Scientific reports, 9(1), 19000.\">2019</a>)</span> que genera se\u00f1ales de ECG realistas. El modelo parte de un sistema gen\u00e9rico de reacci\u00f3n-difusi\u00f3n (el modelo BVAM) y, tras la discretizaci\u00f3n espacial y reducciones de simetr\u00eda, produce un conjunto compacto de cuatro ecuaciones diferenciales ordinarias (Ecuaci\u00f3n 3 del art\u00edculo)</p>", "a[href=\"#calcular-y-graficar-la-senal-de-ecg-tiempo-real\"]": "<h2 class=\"tippy-header\" style=\"margin-top: 0;\">Calcular y graficar la se\u00f1al de ECG (tiempo real)<a class=\"headerlink\" href=\"#calcular-y-graficar-la-senal-de-ecg-tiempo-real\" title=\"Link to this heading\">#</a></h2><p>Tomando en cuenta la Ec. <a class=\"reference internal\" href=\"#equation-ecg\">(33)</a>, es necesario convertir el tiempo adimensional a segundos reales utilizando el factor de escala</p>", "a[href=\"#modelado-del-potencial-de-accion-del-electrocardiograma-ecg\"]": "<h1 class=\"tippy-header\" style=\"margin-top: 0;\">Modelado del Potencial de Acci\u00f3n del Electrocardiograma (ECG)<a class=\"headerlink\" href=\"#modelado-del-potencial-de-accion-del-electrocardiograma-ecg\" title=\"Link to this heading\">#</a></h1><p>El latido del coraz\u00f3n humano es orquestado por un sistema el\u00e9ctrico complejo. C\u00e9lulas especializadas en el <strong>nodo sinoauricular (SA)</strong> generan impulsos r\u00edtmicos que viajan a trav\u00e9s de las aur\u00edculas, el <strong>nodo auriculoventricular (AV)</strong> y, finalmente, la <strong>red de His-Purkinje</strong>, provocando la contracci\u00f3n de los ventr\u00edculos. Esta actividad el\u00e9ctrica puede registrarse sobre la piel como un <strong>electrocardiograma (ECG)</strong>, una herramienta diagn\u00f3stica vital para detectar trastornos card\u00edacos.</p>", "a[href=\"#parametros-para-el-ritmo-sinusal-normal\"]": "<h2 class=\"tippy-header\" style=\"margin-top: 0;\">Par\u00e1metros para el ritmo sinusal normal<a class=\"headerlink\" href=\"#parametros-para-el-ritmo-sinusal-normal\" title=\"Link to this heading\">#</a></h2><p>De acuerdo con el art\u00edculo:</p>"}
+skip_classes = ["headerlink", "sd-stretched-link"]
+
+window.onload = function () {
+    for (const [select, tip_html] of Object.entries(selector_to_html)) {
+        const links = document.querySelectorAll(`article.bd-article ${select}`);
+        for (const link of links) {
+            if (skip_classes.some(c => link.classList.contains(c))) {
+                continue;
+            }
+
+            tippy(link, {
+                content: tip_html,
+                allowHTML: true,
+                arrow: false,
+                placement: 'auto-start', maxWidth: 500, interactive: true, boundary: document.body, appendTo: document.body,
+                onShow(instance) {MathJax.typesetPromise([instance.popper]).then(() => {var isFirefox=typeof InstallTrigger!=='undefined';if(isFirefox&&window.MathJax&&MathJax.startup&&MathJax.startup.output&&MathJax.startup.output.name==="SVG"){const svgs=instance.popper.querySelectorAll('svg');svgs.forEach(svg=>{let bbox=svg.getBBox(),x=bbox.x,y=bbox.y,width=bbox.width,height=bbox.height;svg.setAttribute('width',width);svg.setAttribute('height',height);svg.setAttribute('viewBox',`${x} ${y} ${width} ${height}`);});let rescale=0.015;svgs.forEach(svg=>{let bbox=svg.getBBox(),width=bbox.width,height=bbox.height;svg.setAttribute('width',width*rescale);svg.setAttribute('height',height*rescale);});}});},
+            });
+        };
+    };
+    console.log("tippy tips loaded!");
+};

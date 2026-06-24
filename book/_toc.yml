@@ -11,7 +11,12 @@ parts:
     chapters:
     - file: modelado/sistema_1.ipynb
     - file: modelado/sistema_2.ipynb
+    - file: modelado/sistema_3.ipynb
 
+  - caption: Notas parciales
+    chapters:
+    - file: notas/notas_parciales.md
+    
   - caption: Miscellaneous
     chapters:
     - file: references.md

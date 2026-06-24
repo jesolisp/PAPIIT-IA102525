@@ -7,9 +7,10 @@ La derivada conformable de orden $\alpha \in (0,1]$ fue introducida por {cite:t}
 
  Para una función diferenciable $f:[0,\infty) \rightarrow \mathbb{R}$, la derivada conformable de orden $\alpha$ se define como
 
- \begin{equation}
-    {}^{K}\mathcal{D}_{t}^{\alpha}~f(t) = \lim_{\epsilon \rightarrow 0} \frac{f(t + \epsilon t^{1-\alpha}) - f(t)}{\epsilon}, \quad t > 0.
- \end{equation}
+ ```{math}
+ :label: khalil_derivative
+  {}^{K}\mathcal{D}_{t}^{\alpha}~f(t) = \lim_{\epsilon \rightarrow 0} \frac{f(t + \epsilon t^{1-\alpha}) - f(t)}{\epsilon}, \quad t > 0.
+ ```
 ````
 
 Para el modelado computacional, la propiedad más crítica de esta definición es que, si $f$ es diferenciable en el sentido clásico, la derivada fraccionaria puede expresarse como un simple escalamiento ponderado en el tiempo de la primera derivada
