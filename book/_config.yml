@@ -27,6 +27,7 @@ sphinx:
     - https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js
     thebe_config:
       use_thebe_lite: true
+      always_active: true 
       exclude_patterns: ["**/_*.yml", "**/*.md", "**/*.ipynb","**/*.gif","**/*.txt","**/*.json",]
     html_theme_options:
       logo:
@@ -42,6 +43,7 @@ sphinx:
       use_issues_button : true
       launch_buttons:
           thebe: true
+          thebe_auto_execute: true
     html_show_copyright: false
     html_last_updated_fmt: '%B %-d, %Y'
     html_static_path: ["images"]

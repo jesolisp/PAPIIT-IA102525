@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="article:modified_time" content="2026-06-23T20:05:11-06:00" />
+    <meta property="article:modified_time" content="2026-06-23T20:05:59-06:00" />
     <title>Péndulo simple &#8212; Modelación de Sistemas Físicos y su Análisis Dinámico utilizando Cálculo Fraccionario</title>
   
   
@@ -129,7 +129,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="../_static/tippy/modelado/sistema_1.6ffbfef1-a39b-4378-8da6-945993a5f123.js"></script>
+    <script defer="defer" src="../_static/tippy/modelado/sistema_1.c75a8162-24b7-4fe6-9e67-14e8ad5c3208.js"></script>
     <script>window.MathJax = {"tex": {"macros": {"newcolor": ["\\definecolor{newcolor}{RGB}{111, 29, 119}{\\color{newcolor}#1}", 1], "black": ["\\class{black}{#1}", 1], "silver": ["\\class{silver}{#1}", 1], "gray": ["\\class{gray}{#1}", 1], "white": ["\\class{white}{#1}", 1], "maroon": ["\\class{maroon}{#1}", 1], "red": ["\\class{red}{#1}", 1], "purple": ["\\class{purple}{#1}", 1], "fuchsia": ["\\class{fuchsia}{#1}", 1], "green": ["\\class{green}{#1}", 1], "lime": ["\\class{lime}{#1}", 1], "olive": ["\\class{olive}{#1}", 1], "yellow": ["\\class{yellow}{#1}", 1], "navy": ["\\class{navy}{#1}", 1], "blue": ["\\class{blue}{#1}", 1], "teal": ["\\class{teal}{#1}", 1], "aqua": ["\\class{aqua}{#1}", 1], "aliceblue": ["\\class{aliceblue}{#1}", 1], "antiquewhite": ["\\class{antiquewhite}{#1}", 1], "aquamarine": ["\\class{aquamarine}{#1}", 1], "azure": ["\\class{azure}{#1}", 1], "beige": ["\\class{beige}{#1}", 1], "bisque": ["\\class{bisque}{#1}", 1], "blanchedalmond": ["\\class{blanchedalmond}{#1}", 1], "blueviolet": ["\\class{blueviolet}{#1}", 1], "brown": ["\\class{brown}{#1}", 1], "burlywood": ["\\class{burlywood}{#1}", 1], "cadetblue": ["\\class{cadetblue}{#1}", 1], "chartreuse": ["\\class{chartreuse}{#1}", 1], "chocolate": ["\\class{chocolate}{#1}", 1], "coral": ["\\class{coral}{#1}", 1], "cornflowerblue": ["\\class{cornflowerblue}{#1}", 1], "cornsilk": ["\\class{cornsilk}{#1}", 1], "crimson": ["\\class{crimson}{#1}", 1], "cyan": ["\\class{cyan}{#1}", 1], "darkblue": ["\\class{darkblue}{#1}", 1], "darkcyan": ["\\class{darkcyan}{#1}", 1], "darkgoldenrod": ["\\class{darkgoldenrod}{#1}", 1], "darkgray": ["\\class{darkgray}{#1}", 1], "darkgreen": ["\\class{darkgreen}{#1}", 1], "darkgrey": ["\\class{darkgrey}{#1}", 1], "darkkhaki": ["\\class{darkkhaki}{#1}", 1], "darkmagenta": ["\\class{darkmagenta}{#1}", 1], "darkolivegreen": ["\\class{darkolivegreen}{#1}", 1], "darkorange": ["\\class{darkorange}{#1}", 1], "darkorchid": ["\\class{darkorchid}{#1}", 1], "darkred": ["\\class{darkred}{#1}", 1], "darksalmon": ["\\class{darksalmon}{#1}", 1], "darkseagreen": ["\\class{darkseagreen}{#1}", 1], "darkslateblue": ["\\class{darkslateblue}{#1}", 1], "darkslategray": ["\\class{darkslategray}{#1}", 1], "darkslategrey": ["\\class{darkslategrey}{#1}", 1], "darkturquoise": ["\\class{darkturquoise}{#1}", 1], "darkviolet": ["\\class{darkviolet}{#1}", 1], "deeppink": ["\\class{deeppink}{#1}", 1], "deepskyblue": ["\\class{deepskyblue}{#1}", 1], "dimgray": ["\\class{dimgray}{#1}", 1], "dimgrey": ["\\class{dimgrey}{#1}", 1], "dodgerblue": ["\\class{dodgerblue}{#1}", 1], "firebrick": ["\\class{firebrick}{#1}", 1], "floralwhite": ["\\class{floralwhite}{#1}", 1], "forestgreen": ["\\class{forestgreen}{#1}", 1], "gainsboro": ["\\class{gainsboro}{#1}", 1], "ghostwhite": ["\\class{ghostwhite}{#1}", 1], "gold": ["\\class{gold}{#1}", 1], "goldenrod": ["\\class{goldenrod}{#1}", 1], "greenyellow": ["\\class{greenyellow}{#1}", 1], "grey": ["\\class{grey}{#1}", 1], "honeydew": ["\\class{honeydew}{#1}", 1], "hotpink": ["\\class{hotpink}{#1}", 1], "indianred": ["\\class{indianred}{#1}", 1], "indigo": ["\\class{indigo}{#1}", 1], "ivory": ["\\class{ivory}{#1}", 1], "khaki": ["\\class{khaki}{#1}", 1], "lavender": ["\\class{lavender}{#1}", 1], "lavenderblush": ["\\class{lavenderblush}{#1}", 1], "lawngreen": ["\\class{lawngreen}{#1}", 1], "lemonchiffon": ["\\class{lemonchiffon}{#1}", 1], "lightblue": ["\\class{lightblue}{#1}", 1], "lightcoral": ["\\class{lightcoral}{#1}", 1], "lightcyan": ["\\class{lightcyan}{#1}", 1], "lightgoldenrodyellow": ["\\class{lightgoldenrodyellow}{#1}", 1], "lightgray": ["\\class{lightgray}{#1}", 1], "lightgreen": ["\\class{lightgreen}{#1}", 1], "lightgrey": ["\\class{lightgrey}{#1}", 1], "lightpink": ["\\class{lightpink}{#1}", 1], "lightsalmon": ["\\class{lightsalmon}{#1}", 1], "lightseagreen": ["\\class{lightseagreen}{#1}", 1], "lightskyblue": ["\\class{lightskyblue}{#1}", 1], "lightslategray": ["\\class{lightslategray}{#1}", 1], "lightslategrey": ["\\class{lightslategrey}{#1}", 1], "lightsteelblue": ["\\class{lightsteelblue}{#1}", 1], "lightyellow": ["\\class{lightyellow}{#1}", 1], "limegreen": ["\\class{limegreen}{#1}", 1], "linen": ["\\class{linen}{#1}", 1], "magenta": ["\\class{magenta}{#1}", 1], "mediumaquamarine": ["\\class{mediumaquamarine}{#1}", 1], "mediumblue": ["\\class{mediumblue}{#1}", 1], "mediumorchid": ["\\class{mediumorchid}{#1}", 1], "mediumpurple": ["\\class{mediumpurple}{#1}", 1], "mediumseagreen": ["\\class{mediumseagreen}{#1}", 1], "mediumslateblue": ["\\class{mediumslateblue}{#1}", 1], "mediumspringgreen": ["\\class{mediumspringgreen}{#1}", 1], "mediumturquoise": ["\\class{mediumturquoise}{#1}", 1], "mediumvioletred": ["\\class{mediumvioletred}{#1}", 1], "midnightblue": ["\\class{midnightblue}{#1}", 1], "mintcream": ["\\class{mintcream}{#1}", 1], "mistyrose": ["\\class{mistyrose}{#1}", 1], "moccasin": ["\\class{moccasin}{#1}", 1], "navajowhite": ["\\class{navajowhite}{#1}", 1], "oldlace": ["\\class{oldlace}{#1}", 1], "olivedrab": ["\\class{olivedrab}{#1}", 1], "orange": ["\\class{orange}{#1}", 1], "orangered": ["\\class{orangered}{#1}", 1], "orchid": ["\\class{orchid}{#1}", 1], "palegoldenrod": ["\\class{palegoldenrod}{#1}", 1], "palegreen": ["\\class{palegreen}{#1}", 1], "paleturquoise": ["\\class{paleturquoise}{#1}", 1], "palevioletred": ["\\class{palevioletred}{#1}", 1], "papayawhip": ["\\class{papayawhip}{#1}", 1], "peachpuff": ["\\class{peachpuff}{#1}", 1], "peru": ["\\class{peru}{#1}", 1], "pink": ["\\class{pink}{#1}", 1], "plum": ["\\class{plum}{#1}", 1], "powderblue": ["\\class{powderblue}{#1}", 1], "rebeccapurple": ["\\class{rebeccapurple}{#1}", 1], "rosybrown": ["\\class{rosybrown}{#1}", 1], "royalblue": ["\\class{royalblue}{#1}", 1], "saddlebrown": ["\\class{saddlebrown}{#1}", 1], "salmon": ["\\class{salmon}{#1}", 1], "sandybrown": ["\\class{sandybrown}{#1}", 1], "seagreen": ["\\class{seagreen}{#1}", 1], "seashell": ["\\class{seashell}{#1}", 1], "sienna": ["\\class{sienna}{#1}", 1], "skyblue": ["\\class{skyblue}{#1}", 1], "slateblue": ["\\class{slateblue}{#1}", 1], "slategray": ["\\class{slategray}{#1}", 1], "slategrey": ["\\class{slategrey}{#1}", 1], "snow": ["\\class{snow}{#1}", 1], "springgreen": ["\\class{springgreen}{#1}", 1], "steelblue": ["\\class{steelblue}{#1}", 1], "thistle": ["\\class{thistle}{#1}", 1], "tomato": ["\\class{tomato}{#1}", 1], "turquoise": ["\\class{turquoise}{#1}", 1], "violet": ["\\class{violet}{#1}", 1], "wheat": ["\\class{wheat}{#1}", 1], "whitesmoke": ["\\class{whitesmoke}{#1}", 1], "yellowgreen": ["\\class{yellowgreen}{#1}", 1], "onlylight": ["\\class{onlylight}{#1}", 1], "lightanddark": ["\\class{lightanddark}{#1}", 1], "hyphen-color": ["\\class{hyphen-color}{#1}", 1], "attributiongrey": ["\\class{attributiongrey}{#1}", 1]}}, "loader": {"load": ["ui/lazy"]}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="../_static/mathjax_patch.js?v=c73a562d"></script>
     <script src="https://unpkg.com/viewerjs/dist/viewer.min.js"></script>
@@ -565,8 +565,8 @@ document.write(`
 <h1>Péndulo simple<a class="headerlink" href="#pendulo-simple" title="Link to this heading">#</a></h1>
 <p>Para establecer una línea de base, primero se define el sistema clásico del péndulo no lineal con amortiguamiento. Las ecuaciones gobernantes son:</p>
 <p><strong>Sistema clásico original del péndulo</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-9d00f5b4-7801-46e1-81ed-b096a503a7ea">
-<span class="eqno">(6)<a class="headerlink" href="#equation-9d00f5b4-7801-46e1-81ed-b096a503a7ea" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ebc50505-9a42-4320-8ba8-4102f511754c">
+<span class="eqno">(6)<a class="headerlink" href="#equation-ebc50505-9a42-4320-8ba8-4102f511754c" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   \dot{x}_1 &amp;= x_2, \\
   \dot{x}_2 &amp;= -\frac{g}{l} \sin(x_1) - \frac{K_f}{m} x_2,
@@ -621,8 +621,8 @@ document.write(`
 </table>
 </div>
 <p><strong>Aplicación de la derivada conformable</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-08f4b72f-e60c-4605-ab7c-101ee17c1dd1">
-<span class="eqno">(7)<a class="headerlink" href="#equation-08f4b72f-e60c-4605-ab7c-101ee17c1dd1" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8c60209b-37ae-4e08-9e45-1baa9a2e0f84">
+<span class="eqno">(7)<a class="headerlink" href="#equation-8c60209b-37ae-4e08-9e45-1baa9a2e0f84" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   {}^{K}\mathcal{D}_{t}^{\alpha}~ x_1 &amp;= x_2, \\
   {}^{K}\mathcal{D}_{t}^{\alpha}~ x_2 &amp;= -\frac{g}{l} \sin(x_1) - \frac{K_f}{m} x_2.
@@ -630,16 +630,16 @@ document.write(`
 \end{equation}\]</div>
 <p><strong>Conversión a derivadas ordinarias</strong></p>
 <p>Utilizando <span class="math notranslate nohighlight">\({}^{K}\mathcal{D}_{t}^{\alpha}~f(t) = t^{1-\alpha} \dot{f}(t)\)</span></p>
-<div class="amsmath math notranslate nohighlight" id="equation-0b2ff2d9-515c-4708-ae02-6fccafad6027">
-<span class="eqno">(8)<a class="headerlink" href="#equation-0b2ff2d9-515c-4708-ae02-6fccafad6027" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-80e8679b-1179-4234-99c9-582383ee6df0">
+<span class="eqno">(8)<a class="headerlink" href="#equation-80e8679b-1179-4234-99c9-582383ee6df0" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   t^{1-\alpha} \dot{x}_1 &amp;= x_2 \quad \Rightarrow \quad \dot{x}_1 = t^{\alpha-1} x_2, \\
   t^{1-\alpha} \dot{x}_2 &amp;= -\frac{g}{l} \sin(x_1) - \frac{K_f}{m} x_2 \quad \Rightarrow \quad \dot{x}_2 = t^{\alpha-1} \left( -\frac{g}{l} \sin(x_1) - \frac{K_f}{m} x_2 \right).
  \end{aligned}
 \end{equation}\]</div>
 <p><strong>Sistema final en forma de Ecuaciones Ordinarias Diferenciales (ODEs)</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-393aee42-5728-435e-b4a1-d3886ad51e10">
-<span class="eqno">(9)<a class="headerlink" href="#equation-393aee42-5728-435e-b4a1-d3886ad51e10" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-72add4ea-6812-4e88-94d0-3decd594b18f">
+<span class="eqno">(9)<a class="headerlink" href="#equation-72add4ea-6812-4e88-94d0-3decd594b18f" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   \dot{x}_1 &amp;= t^{\alpha-1} x_2, \\
   \dot{x}_2 &amp;= t^{\alpha-1} \left( -\frac{g}{l} \sin(x_1) - \frac{K_f}{m} x_2 \right).
@@ -696,22 +696,22 @@ document.write(`
 <li><p><span class="math notranslate nohighlight">\(C_D\)</span>: Coeficiente de arrastre aerodinámico.</p></li>
 </ul>
 <p>Aplicando la derivada conformable de orden <span class="math notranslate nohighlight">\(\alpha\)</span>, tenemos</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5973926d-a8a2-41e2-8c6a-d951091036f1">
-<span class="eqno">(10)<a class="headerlink" href="#equation-5973926d-a8a2-41e2-8c6a-d951091036f1" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-392f2a76-ab89-479c-ac51-32170e8835bb">
+<span class="eqno">(10)<a class="headerlink" href="#equation-392f2a76-ab89-479c-ac51-32170e8835bb" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   {}^{K}\mathcal{D}_{t}^{\alpha}~ x_1 &amp;= x_2, \\
   {}^{K}\mathcal{D}_{t}^{\alpha}~ x_2 &amp;= -\alpha\omega_n^2 \sin(x_1) - c|x_2|x_2 - \alpha\eta|\cos(x_1)|\operatorname{sgn}(x_2).
  \end{aligned}
 \end{equation}\]</div>
 <p>o de la forma</p>
-<div class="amsmath math notranslate nohighlight" id="equation-abfab51a-4cd3-4dea-954c-9a16060f0cc3">
-<span class="eqno">(11)<a class="headerlink" href="#equation-abfab51a-4cd3-4dea-954c-9a16060f0cc3" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-0b696338-e5ad-43ac-bcc6-afb6d7afaae0">
+<span class="eqno">(11)<a class="headerlink" href="#equation-0b696338-e5ad-43ac-bcc6-afb6d7afaae0" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   \dot{x}_1 &amp;= t^{\alpha-1} x_2, \\
   \dot{x}_2 &amp;= t^{\alpha-1} \left[ -\alpha\omega_n^2 \sin(x_1) - c|x_2|x_2 - \alpha\eta|\cos(x_1)|\operatorname{sgn}(x_2) \right].
  \end{aligned}
 \end{equation}\]</div>
-<div class="cell docutils container">
+<div class="cell tag_thebe-remove-input-init docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -742,7 +742,7 @@ document.write(`
 </div>
 </div>
 <p><span id="id2">Hasan <em>et al.</em> (<a class="reference internal" href="../references.html#id3" title="Hasan, M. S., Deepu, P., Kumar, K., Agrawal, A., &amp; Meena, D. K. (2023). Oscillation decay of a pendulum by an air jet. Physics Letters A, 481, 129003.">2023</a>)</span> propone los siguientes parámetros de su modelo considerando que el chorro de aire incrementa la gravedad efectiva mediante el factor <code class="docutils literal notranslate"><span class="pre">alpha_gravity</span></code>.</p>
-<div class="cell docutils container">
+<div class="cell tag_auto-execute-page docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># ==============================================================================</span>
 <span class="c1"># Parámetros Físicos (Hasan et al., 2023)</span>
@@ -784,7 +784,7 @@ Gravity enhancement (alpha_gravity) = 3.415
 <li><p>Arrastre cuadrático (<span class="math notranslate nohighlight">\(c |x_2| x_2\)</span>).</p></li>
 <li><p>Fricción seca (<code class="docutils literal notranslate"><span class="pre">alpha_gravity</span></code> <span class="math notranslate nohighlight">\(\times \, \eta |\cos(x_1)| \operatorname{sgn}(x_2)\)</span>).</p></li>
 </ul>
-<div class="cell docutils container">
+<div class="cell tag_thebe-remove-input-init docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">pendulum_regular</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">alpha_gravity</span><span class="p">,</span> <span class="n">omega_n</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">eta</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -866,30 +866,30 @@ eta = 0.063690
 <section id="decaimiento-de-la-oscilacion-de-un-pendulo-debido-a-un-chorro-de-aire">
 <h2>Decaimiento de la oscilación de un péndulo debido a un chorro de aire<a class="headerlink" href="#decaimiento-de-la-oscilacion-de-un-pendulo-debido-a-un-chorro-de-aire" title="Link to this heading">#</a></h2>
 <p>Cabe recordar que la ecuación presentada por <span id="id3">Hasan <em>et al.</em> (<a class="reference internal" href="../references.html#id3" title="Hasan, M. S., Deepu, P., Kumar, K., Agrawal, A., &amp; Meena, D. K. (2023). Oscillation decay of a pendulum by an air jet. Physics Letters A, 481, 129003.">2023</a>)</span> está dada como sigue</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4487e15a-8714-4659-9fd8-dcef9c4f046d">
-<span class="eqno">(12)<a class="headerlink" href="#equation-4487e15a-8714-4659-9fd8-dcef9c4f046d" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-ed434e71-3cdc-4e7b-bca8-049ea93ff405">
+<span class="eqno">(12)<a class="headerlink" href="#equation-ed434e71-3cdc-4e7b-bca8-049ea93ff405" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   \dot{x}_1 &amp;= x_2, \\
   \dot{x}_2 &amp;= -\alpha\omega_n^2 \sin(x_1) - c|x_2|x_2 - \alpha\eta|\cos(x_1)|\operatorname{sgn}(x_2),
  \end{aligned}
 \end{equation}\]</div>
 <p>Aplicando la derivada conformable de orden <span class="math notranslate nohighlight">\(\alpha\)</span></p>
-<div class="amsmath math notranslate nohighlight" id="equation-72434947-1d48-43eb-b6f9-24afe8b385af">
-<span class="eqno">(13)<a class="headerlink" href="#equation-72434947-1d48-43eb-b6f9-24afe8b385af" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d4df5b70-83da-4e0a-9757-f31ec21eecaa">
+<span class="eqno">(13)<a class="headerlink" href="#equation-d4df5b70-83da-4e0a-9757-f31ec21eecaa" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   {}^{K}\mathcal{D}_{t}^{\alpha}~ x_1 &amp;= x_2, \\
   {}^{K}\mathcal{D}_{t}^{\alpha}~ x_2 &amp;= -\alpha\omega_n^2 \sin(x_1) - c|x_2|x_2 - \alpha\eta|\cos(x_1)|\operatorname{sgn}(x_2),
  \end{aligned}
 \end{equation}\]</div>
 <p>o en representacion de un sistema de ecuaciones diferenciales ordinarias como sigue</p>
-<div class="amsmath math notranslate nohighlight" id="equation-43767193-caa1-42e5-a5a4-26db29c9e0eb">
-<span class="eqno">(14)<a class="headerlink" href="#equation-43767193-caa1-42e5-a5a4-26db29c9e0eb" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-3f356459-794c-4737-8898-4ef0c6990866">
+<span class="eqno">(14)<a class="headerlink" href="#equation-3f356459-794c-4737-8898-4ef0c6990866" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   \dot{x}_1 &amp;= t^{\alpha-1}~ x_2, \\
   \dot{x}_2 &amp;= t^{\alpha-1}~ \left[ -\alpha\omega_n^2 \sin(x_1) - c|x_2|x_2 - \alpha\eta|\cos(x_1)|\operatorname{sgn}(x_2) \right],
  \end{aligned}
 \end{equation}\]</div>
-<div class="cell docutils container">
+<div class="cell tag_thebe-remove-input-init docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Modelo con factor de escalamiento σ</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">pendulum_conformable</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">alpha_frac</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">alpha_gravity</span><span class="p">,</span> <span class="n">omega_n</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">eta</span><span class="p">):</span>
@@ -1035,8 +1035,8 @@ Time range: 0.10 – 30.00 s
 </div>
 </div>
 <p>Al modelar sistemas físicos con cálculo fraccionario, se encuentra un problema fundamental: la <strong>inconsistencia dimensional</strong>. Recordemos que la derivada conformable se define como</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a56b47d9-f5ce-4baa-81b5-473521e10c68">
-<span class="eqno">(15)<a class="headerlink" href="#equation-a56b47d9-f5ce-4baa-81b5-473521e10c68" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2eb677c3-62f1-40c1-aadc-8ac30afeff47">
+<span class="eqno">(15)<a class="headerlink" href="#equation-2eb677c3-62f1-40c1-aadc-8ac30afeff47" title="Permalink to this equation">#</a></span>\[\begin{equation}
  {}^{K}\mathcal{D}_{t}^{\alpha}~ f(t) = t^{1-\alpha} \frac{df}{dt}.
 \end{equation}\]</div>
 <p>Al analizar las unidades observamos que</p>
@@ -1046,8 +1046,8 @@ Time range: 0.10 – 30.00 s
 <li><p>Por lo tanto, <span class="math notranslate nohighlight">\({}^{K}\mathcal{D}_{t}^{\alpha}~ f(t)\)</span> tiene unidades de <span class="math notranslate nohighlight">\([f]/[\text{tiempo}]^\alpha\)</span>.</p></li>
 </ul>
 <p>Si consideramos el sistema del péndulo con enfoque conformable</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f312368a-3e94-4cb9-890a-cf21daaddea2">
-<span class="eqno">(16)<a class="headerlink" href="#equation-f312368a-3e94-4cb9-890a-cf21daaddea2" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-b027d3eb-87ec-4d94-9f3a-d3fbe340a7b8">
+<span class="eqno">(16)<a class="headerlink" href="#equation-b027d3eb-87ec-4d94-9f3a-d3fbe340a7b8" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   {}^{K}\mathcal{D}_{t}^{\alpha}~ x_1 &amp;= x_2, \\
   {}^{K}\mathcal{D}_{t}^{\alpha}~ x_2 &amp;= -\alpha\omega_n^2 \sin(x_1) - c|x_2|x_2 - \alpha\eta|\cos(x_1)|\operatorname{sgn}(x_2).
@@ -1063,8 +1063,8 @@ Time range: 0.10 – 30.00 s
 <p>Estos términos únicamente coinciden cuando <span class="math notranslate nohighlight">\(\alpha = 1\)</span></p>
 </div>
 <p>Para restaurar la consistencia dimensional, se introduce una <strong>escala de tiempo característica</strong> <span class="math notranslate nohighlight">\(\sigma\)</span> con unidades de tiempo</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b524e8df-67d8-45f6-b835-305ca3221e46">
-<span class="eqno">(17)<a class="headerlink" href="#equation-b524e8df-67d8-45f6-b835-305ca3221e46" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-059ec7eb-d9ee-4e78-9dfb-2c82fbde0191">
+<span class="eqno">(17)<a class="headerlink" href="#equation-059ec7eb-d9ee-4e78-9dfb-2c82fbde0191" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \frac{1}{\sigma^{1-\alpha}}~ {}^{K}\mathcal{D}_{t}^{\alpha}~ f(t) = \frac{1}{\sigma^{1-\alpha}}~ t^{1-\alpha}~ \frac{\mathrm{d}f}{\mathrm{d}t}.
 \end{equation}\]</div>
 <p>Ahora ambos lados tienen unidades consistentes de <span class="math notranslate nohighlight">\([f]/[\text{tiempo}]\)</span>.</p>
@@ -1076,16 +1076,16 @@ Time range: 0.10 – 30.00 s
 <li><p><strong>Escala de Observación</strong>: Marco de tiempo experimental típico.</p></li>
 </ol>
 <p>Por consiguiente, el sistema de péndulo de orden no entero dimensionalmente consistente está dado por las siguientes ecuaciones</p>
-<div class="amsmath math notranslate nohighlight" id="equation-05e134b4-c222-4e7e-8208-1dbbd7535019">
-<span class="eqno">(18)<a class="headerlink" href="#equation-05e134b4-c222-4e7e-8208-1dbbd7535019" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-f3f2bbe4-5a19-4027-acaa-97e4640b400f">
+<span class="eqno">(18)<a class="headerlink" href="#equation-f3f2bbe4-5a19-4027-acaa-97e4640b400f" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   \frac{1}{\sigma^{1-\alpha}}~ {}^{K}\mathcal{D}_{t}^{\alpha}~ x_1 &amp;= x_2, \\
   \frac{1}{\sigma^{1-\alpha}}~ {}^{K}\mathcal{D}_{t}^{\alpha}~ x_2 &amp;= -\alpha\omega_n^2 \sin(x_1) - c|x_2|x_2 - \alpha\eta|\cos(x_1)|\operatorname{sgn}(x_2),
  \end{aligned}
 \end{equation}\]</div>
 <p>o bien</p>
-<div class="amsmath math notranslate nohighlight" id="equation-64a46245-75fe-4e6e-8184-491b6864bb4d">
-<span class="eqno">(19)<a class="headerlink" href="#equation-64a46245-75fe-4e6e-8184-491b6864bb4d" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-bf9bcb89-5594-4482-abf2-30f470db7654">
+<span class="eqno">(19)<a class="headerlink" href="#equation-bf9bcb89-5594-4482-abf2-30f470db7654" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \begin{aligned}
   \dot{x}_1 &amp;= t^{\alpha-1}~ \sigma^{1-\alpha}~ x_2, \\
   \dot{x}_2 &amp;= t^{\alpha-1}~ \sigma^{1-\alpha}~ \left[ -\alpha\omega_n^2 \sin(x_1) - c|x_2|x_2 - \alpha\eta|\cos(x_1)|\operatorname{sgn}(x_2) \right].
@@ -1100,8 +1100,8 @@ Time range: 0.10 – 30.00 s
 </ul>
 <p><strong>Recuperación del Límite Clásico</strong></p>
 <p>Cuando <span class="math notranslate nohighlight">\(\alpha \rightarrow 1\)</span></p>
-<div class="amsmath math notranslate nohighlight" id="equation-27955500-0257-4873-ba43-ee203c98418b">
-<span class="eqno">(20)<a class="headerlink" href="#equation-27955500-0257-4873-ba43-ee203c98418b" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8e2656fd-a1ac-4949-b208-cb862640d7bd">
+<span class="eqno">(20)<a class="headerlink" href="#equation-8e2656fd-a1ac-4949-b208-cb862640d7bd" title="Permalink to this equation">#</a></span>\[\begin{equation}
  \frac{1}{\sigma^{0}} D^1 f(t) = 1 \cdot t^0 \frac{df}{dt} = \frac{df}{dt},
 \end{equation}\]</div>
 <p>se recupera exactamente la derivada clásica.</p>
@@ -1121,7 +1121,7 @@ El orden fraccionario <span class="math notranslate nohighlight">\(\alpha\)</spa
 <p class="admonition-title">Nota</p>
 <p>La escala de tiempo característica <span class="math notranslate nohighlight">\(\sigma\)</span> transforma al cálculo fraccionario de una herramienta puramente matemática a un marco de modelado con significado físico.</p>
 </div>
-<div class="cell docutils container">
+<div class="cell tag_thebe-remove-input-init docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fractional_model</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">t_eval</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -1214,6 +1214,7 @@ Bounds:
 
 <span class="c1"># Etapa 1: Búsqueda global (evolución diferencial)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Stage 1: Global search (differential evolution) ...&quot;</span><span class="p">)</span>
+
 <span class="k">try</span><span class="p">:</span>
     <span class="n">result_global</span> <span class="o">=</span> <span class="n">differential_evolution</span><span class="p">(</span>
         <span class="n">objective</span><span class="p">,</span>
@@ -1239,6 +1240,7 @@ Bounds:
 
 <span class="c1"># Etapa 2: Refinamiento local con Nelder-Mead (respeta las cotas a través de la función objetivo)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Stage 2: Local refinement (Nelder‑Mead) ...&quot;</span><span class="p">)</span>
+
 <span class="k">try</span><span class="p">:</span>
     <span class="n">result_nm</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span>
         <span class="n">objective</span><span class="p">,</span>
@@ -1256,6 +1258,7 @@ Bounds:
 
 <span class="c1"># Etapa 3: Ajuste fino con L-BFGS-B (basado en gradiente, respeta las cotas)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Stage 3: Fine‑tuning (L‑BFGS‑B) ...&quot;</span><span class="p">)</span>
+
 <span class="k">try</span><span class="p">:</span>
     <span class="n">result_lbfgs</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span>
         <span class="n">objective</span><span class="p">,</span>
